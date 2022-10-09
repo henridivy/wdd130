@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(255, 164, 228);
+    font-size: 14px;
+}
+main {
+    width: 50%;
+    margin: 0 auto;
+}
+img {
+    width: 10rem;
+    display: block;
+    margin: 0 auto;
+}
+p, h1, h2, h3 {
+    color: white;
+    font-family: Tahoma, Helvetica, Arial, sans-serif;
+}
+ol {
+    font-weight: bold;
+    font-family: Helvetica;
+}
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+h1:hover {
+    color: black
+}
+.ending {
+    color: black;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+}
+.quote {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#bigquote {
+    font-size: 3em;
+}
