@@ -1,4 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans');
+
+@font-face {
+    font-family: Dark Waters;
+    src: url(fonts/DarkWaters-Regular.otf);
+}
+
 #content {
+    background-color: #96D2F8;
     max-width: 1600px;
     margin: 0 auto;
 }
@@ -12,6 +21,9 @@ nav {
     text-align: center;
     font-size: 1.5em;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
 }
 
 nav a {
@@ -19,6 +31,10 @@ nav a {
     text-align: center;
     margin: 20px;
     text-decoration: none;
+    padding: 1em;
+    font-family: "Quattrocento Sans", Helvetica, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5em;
 }
 
 #hero-msg h1, #hero-msg h4 {
@@ -30,9 +46,15 @@ nav a {
     text-align: center;
 }
 
-main section {
+main, section {
     text-align: center;
 }
+
+main section img {
+    box-sizing: border-box;
+}
+
+img {box-sizing: border-box;}
 
 #background {
     height: 725px;
@@ -41,12 +63,14 @@ main section {
 
 body {
     background-color: #c7eaff;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background-color: #96D2F8;
     background-color: white;
-    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 150px auto;
 }
 
 nav a:hover {
@@ -98,6 +122,8 @@ footer p a:hover {
 .home-title {
     color: #96D2F8;
     background-color: white;
+    font-family: Staatliches;
+    font-size: 3em;
 }
 
 h4 {
@@ -110,10 +136,21 @@ h4 {
     margin: 40px auto;
 }
 
+#info {
+    color: #5682c4;
+    font-size: 0.5em;
+}
+
 /* from this part on, I added myself to test */
 
 .rivers-card, .camping-card, .rapids-card {
     display: inline;
+    margin: 25px auto;
+    width: 90%;
+}
+
+.card-img {
+    width: 20%;
 }
 
 section h2 {
