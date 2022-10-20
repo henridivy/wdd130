@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+body {
+    font-family: Castoro;
+    font-size: 30px;
+    margin: 0;
+}
+
+img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 100%;
+}
+
+h1 {
+    font-size: 15vw;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    z-index: 1;
+    text-align: center;
+}
+
+.right-box {
+    background-color: rgb(175, 173, 172);
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+h3 {
+    color: darkred;
+    text-align: center;
+    bottom: 0px;
+    font-size: 5em;
+    position: relative;
+    top: 450px;
+}
+
