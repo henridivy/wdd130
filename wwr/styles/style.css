@@ -4,10 +4,12 @@
     font-family: Dark Waters;
     src: url(fonts/DarkWaters-Regular.otf);
 }
+
 body {
     margin: 0;
     padding: 0;
 }
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -410,6 +412,31 @@ h4 {
 .background-img {
     width: 100%;
 }
+
+#title {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 7em;
+    color: #fc861e;
+    margin-bottom: 0;
+}
+
+#message {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 2em;
+    color: #ffcd44;
+    margin-top: 0;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.info {
+    font-family: 'Rubiks Moonrock', sans-serif;
+}
+
 
 /*MEDIA QUERY*/
 
