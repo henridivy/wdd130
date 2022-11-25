@@ -121,16 +121,16 @@ main section img {
     background-color: #ffcd44;
     color: #fc861e;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
 }
 
 .book:hover, .join:hover {
-background-color: #fc861e;
-color: white;
- box-shadow: 4px 4px 4px #000000;
+    background-color: #fc861e;
+    color: white;
+    box-shadow: 4px 4px 4px #6f7364;
 }
 
 .button-box {
@@ -184,27 +184,27 @@ color: white;
 }
 
 #background {
- grid-column: 1/11;
-  grid-row: 4/9;
-height: auto;
- background-color: #ffcd44;
+    grid-column: 1/11;
+    grid-row: 4/9;
+    height: auto;
+    background-color: #ffcd44;
 }
 
 .mountains {
     grid-column: 2/7;
     grid-row: 5/8;
-  width: 100%;
- margin: 25px 0 25px -45px;
+    width: 100%;
+    margin: 25px 0 25px -45px;
 }
 
 
 .msg {
- background-color: #a8a8a8;
- padding: 55px;
- grid-column: 6/10;
- grid-row: 6/7;
- margin: 25px 65px 25px -55px;
- border: 5px solid black;
+    background-color: #a8a8a8;
+    padding: 55px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    margin: 25px 65px 25px -55px;
+    border: 5px solid black;
 }
 .msg h2 {
    color: #252525;
@@ -316,6 +316,8 @@ h4 {
 
 .question {
     font-family: 'Rubik Moonrock', sans-serif;
+    border: 5px dashed #5682c4;
+    border-radius: 50px;
 }
 
 #faq-grid {
@@ -325,11 +327,13 @@ h4 {
 
 .section {
     grid-row: 1fr;
+    margin: 0 30px;
 }
 
 .questions-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 50px;
 }
 
 .faq-h3 {
@@ -344,6 +348,44 @@ h4 {
 .question-content-2 {
     grid-column: 2/3;
 }
+
+.question-image {
+    border-radius: 50%;
+}
+
+#bottom-tag {
+    margin: 200px auto;
+}
+
+#advert {
+    font-size: 2.5em;
+    font-family: 'Rubik Moonrock', sans-serif;
+    background-color: #ffcd44;
+    color: white;
+    border-radius: 50%;
+    width: 40%;
+    padding: 100px;
+    margin: 0 auto;
+    margin-left: 20%;
+}
+
+.advert-2 {
+    background-color: white;
+    border: 10px solid #ffcd44;
+    border-radius: 50%;
+    width: 40%;
+    padding: 50px 70px;
+    margin: 0 auto;
+    margin-top: -60px;
+    margin-left: 34%;
+}
+
+.book-text {
+    color: #6f7364;
+    font-family: 'Rubik Moonrock', sans-serif;
+}
+
+
 /*MEDIA QUERY*/
 
 
@@ -394,6 +436,17 @@ h4 {
 
     .faq-title {
         color: #6f7364;
+    }
+
+    .question-image:hover {
+        /* opacity: 0.8; */
+        /* transform: scale(1.1); */
+        position: fixed;
+        /* bottom: 5%;
+        left: 5%; */
+        width: 90%;
+        top: 5%;
+        left: 5%;
     }
 }
 
