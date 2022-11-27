@@ -553,5 +553,13 @@ h4 img {
         top: 5%;
         left: 5%;
     }
+
+
+    /* PAGE 3 */
+
+    .main-grid {
+        display: block;
+    }
+
 }
 
