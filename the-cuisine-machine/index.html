@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cuisine Machine | Home</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/first_logo.png" alt="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Meals
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="meals-breakfast.html">Breakfast</a>
+                  <a href="meals-lunch.html">Lunch</a>
+                  <a href="meals-dinner.html">Dinner</a>
+                </div>
+            </div>
+            <a href="sides.html">Sides</a>
+            <a href="around_the_world.html">Around the World</a>
+            <a href="site-plan.html">Site Plan</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div id="hero-box">
+                <img id="hero-img" src="images/homepage-banner-2.png" alt="dishes and bowls of assorted food">
+            </div>
+            <section id="hero-msg">
+                <h1 class="hero-title">The Cuisine Machine</h1>
+                <h2 class="hero-text">your tummy's favourite place</h2>
+            </section>
+        </section>
+        <div id="message">
+            <p>Hosting a luncheon? Preparing a meal for the whole family? Looking for a quick dish after a long day?</p>
+            <h3 class="highlight">Look no further.</h3>
+            <p>Planning a meal, day after day, can be a <i>challenge</i>. It isn’t always easy to figure out what to cook that will satisfy everyone’s tastes buds and won’t bore them; and this is all before checking to see if the required ingredients are available, if you have the needed tools, and if the dish is something you can prepare in your allotted timespan.</p>
+            <p>Here you will find an interesting and wide array of new dishes, to fit a variety of taste buds and diets. Different options for breakfast, lunch, and dinner, as well as sandwiches, salads, desserts, and drinks. Combine recipes to create a whole meal, suitable for the whole family or for entertaining a party. Each recipe also comes with helpful nutritional information, which includes a per serving analysis of the calorie, protein, carbohydrate, fat, sodium, and cholesterol content.</p>
+            <p>While the recipes offer a chance to try unique flavor combinations, you can adapt each one to your own taste and needs. Time management guides are provided to help make preparation easy so you are able to get everything ready to serve at the same time.</p>
+            <h4 class="highlight">Whether you’re craving burritos, soup, or a nice stir-fried rice, we’ve got you covered!</h4>
+        </div>
+        <section class="gallery">
+            <img src="images/home-gallery-1.png">
+            <img src="images/home-gallery-2.png">
+            <img src="images/home-gallery-3.png">
+            <img src="images/home-gallery-4.png">
+            <img src="images/home-gallery-5.png">
+            <img src="images/home-gallery-6.png">
+            <img src="images/home-gallery-7.png">
+        </section>
+
+    
+        <!--- form starts here-->
+
+
+        <div id="feedback"></div>
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name"/>
+                </li>
+                <li>
+                    <label for="mail">E-mail:</label>
+                    <input type="email" id="mail" name="user_email"/>
+                </li>
+                <li>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </li>
+                <li class="button">
+                    <button type="submit">Send your message</button>
+                </li>
+            </ul>
+        </form>
+        <style>
+
+            form {
+            /* Center the form on the page */
+            margin: 75px auto;
+            width: 50%;
+            /* Form outline */
+            padding: 1em;
+            border: 4px solid white;
+            border-radius: 1em;
+            }
+
+            ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            }
+
+            form li + li {
+            margin-top: 1em;
+            }
+
+            label {
+            /* Uniform size & alignment */
+            display: inline-block;
+            width: 90px;
+            text-align: right;
+            font-family: 'Bodoni Moda', serif;
+            font-weight: 600;
+            color: #AD6221;
+            }
+
+            input, textarea {
+            /* To make sure that all text fields have the same font settings
+                By default, textareas have a monospace font */
+            font: 1em sans-serif;
+            padding: 5px;
+
+            /* Uniform text field size */
+            width: 80%;
+            box-sizing: border-box;
+
+            /* Match form field borders */
+            border: 1px solid #322325;
+            border-radius: 5px;
+            }
+
+            input:focus, textarea:focus {
+            /* Additional highlight for focused elements */
+            border-color: #000;
+            }
+
+            textarea {
+            /* Align multiline text fields with their labels */
+            vertical-align: top;
+
+            /* Provide space to type some text */
+            height: 5em;
+            }
+
+            .button {
+            /* Align buttons with the text fields */
+            padding-left: 90px; /* same size as the label elements */
+            }
+
+            button {
+            /* This extra margin represent roughly the same space as the space
+                between the labels and their text fields */
+            margin-left: 0.5em;
+            }
+
+            #feedback {
+                background-color: #AD6221;
+                color: white;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                padding: .5em;
+                /* make this element invisible until we are ready for it */
+                display: none;      
+            }
+            .moveDown {
+                margin-top: 3em;
+            }
+
+        </style>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <img class="logo" src="images/first_logo.png" alt="logo">
+            <section class="credits">
+                <h3>RECIPES FROM:</h3>
+                <p><i style="color: white;">Easy Microwave Menus</i> by Barbara Methven</p>
+                <p><i style="color: white;">The Kids' Around the World Cookbook</i> by Deri Robins</p>
+            </section>
+            <section class="contacts">
+                <h3>Contact Us</h3>
+                <p>+1-234-567-8900</p>
+                <p>thecuisinemachine@gmail.com</p>
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/fb_icon.png" alt="facebook">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/ig_icon.png" alt="instagram">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twt_icon.png" alt="twitter">
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <img src="images/in_icon.png" alt="linkedin">
+                </a>
+            </section>
+        </div>
+        <div class="footer-bottom">
+            <p>The Cuisine Machine &copy; 2022 | Henrietta Gabriel | WDD130-24</p>
+            <a href="site-plan.html">Site Plan</a>
+        </div>
+    </footer>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+</body>
+</html>
