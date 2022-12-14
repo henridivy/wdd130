@@ -6,10 +6,10 @@ Fonts are separated by a | */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #AD6221   ;
+  --primary-color: #FEEAD8   ;
   --secondary-color: #769E45 ;
   --accent1-color: #FECA01;
-  --accent2-color: #FEEAD8;
+  --accent2-color: #AD6221;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Bodoni Moda", serif;

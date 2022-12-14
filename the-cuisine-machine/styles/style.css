@@ -229,6 +229,15 @@ nav a:hover, .dropdown:hover .dropbtn {
     box-shadow: 0px 2px 8px 2px #3a2f02;
 }
 
+.footer-top a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-top a:hover {
+    text-decoration: underline;
+}
+
 .footer-bottom a:hover {
     scale: 1.4;
     background-color: #cf0104;
@@ -269,7 +278,179 @@ footer .logo {
 }
 
 
+/*--------PAGE 2 - Meals--------*/
 
+.hero-subpage-title {
+    font-size: 8vw;
+    color: white;
+    text-align: center;
+    margin: 6vw 0 0 0;
+}
+
+.breakfast-text {
+    color: white;
+    font-family: 'Jost', Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 2vw;
+    margin: 0 2em;
+    font-style: italic;
+}
+
+.meal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 4em;
+    background-color: white;
+    padding: 2em;
+    border-radius: 50px;
+}
+
+.meal-image {
+    grid-area: 1/1/3/2;
+    width: 100%;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.meal-title {
+    grid-area: 1/2/2/3;
+    margin: 0 20px;
+    font-size: 2em;
+    color: #769e45;
+    text-align: center;
+}
+
+.ingredient-list {
+    grid-area: 2/2/3/3;
+}
+
+.instructions {
+    grid-area: 3/1/4/3;
+}
+
+.nutrition-info {
+    grid-area: 4/1/5/3;
+    color: #322325;
+    box-sizing: border-box;
+    font-size: 0.8em;
+    font-family: 'Bodoni Moda', Times, serif;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.nutrition-info td {
+    font-family: 'Jost', Helvetica, sans-serif;
+    border: 3px solid #4f2c0e;
+    border-radius: 20px;
+    padding: 8px;
+  }
+  
+.nutrition-info td:nth-child(even) {
+    background-color: #c28a58;
+    color: white;
+}
+
+.nutrition-info td:nth-child(odd) {
+    background-color: #e4bd9c;
+}
+
+
+
+/*------PAGE 3--------*/
+
+.sides-title {
+    margin: 200px 0 50px 0;
+}
+
+.sides-title h2 {
+    font-family: Tangerine, cursive;
+    font-style: italic;
+    text-align: center;
+    font-size: 6vw;
+    color: #322325;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.sides-title h2:nth-child(1) {
+    margin: 0 0 0 -50px;
+}
+
+.sides-title h2:nth-child(2) {
+    font-size: 10vw;
+    margin: -30px 0 0 50px;
+    color:#cf0104;
+    z-index: -5;
+}
+
+
+/*-----AROUND THE WORLD-------*/
+
+.world_meals {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.meal-info {
+    grid-area: 1/2/2/4;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    background-color: white;
+    border-radius: 80px;
+    padding: 30px 45px;
+    margin: 30px;
+}
+
+.meal-info-2 {
+    grid-area: 1/1/2/3;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    background-color: white;
+    border-radius: 80px;
+    padding: 30px 45px;
+    margin: 30px;
+}
+
+.img-1 {
+    grid-area: 1/1/2/2;
+    width: 100%;
+    margin: auto 15px;
+    border-radius: 50px;
+}
+
+.img-2 {
+    grid-area: 1/3/2/4;
+    width: 100%;
+    margin: auto 15px auto -15px;
+    border-radius: 50px;
+}
+
+.world-meal-title {
+    grid-area: 1/1/2/2;
+    margin-bottom: 0 0 20px 0;
+    font-size: 1.6em;
+}
+
+.world-ingredients {
+    grid-area: 2/1/3/2;
+    margin: 0;
+}
+
+.world-instructions {
+    grid-area: 3/1/4/2;
+    font-family: 'Jost', Helvetica, sans-serif;
+}
+
+.world-instructions li:nth-of-type(even) {
+    color: #cf0104;
+}
+
+.country {
+    font-family: Tangerine, cursive;
+    font-size: 2em;
+    color: #ad6221;
+}
 
 /*MEDIA QUERY*/
 
@@ -289,5 +470,23 @@ footer .logo {
 
     .contacts p {
         display: none;
+    }
+
+    /*----PAGE 2----*/
+
+    .hero-subpage-title {
+        font-size: 14vw;
+    }
+
+    .breakfast-text {
+        margin-top: 5em;
+        color: #322325;
+        font-size: 3vw;
+    }
+
+
+    /*----PAGE 3----*/
+    .meal {
+        display: block;
     }
 }
