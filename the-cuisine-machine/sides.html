@@ -5,35 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Cuisine Machine | Sides</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
-        <img src="images/first_logo.png" alt="logo">
+        <img class="logo" src="images/first_logo.png" alt="logo">
         <nav>
             <a href="index.html">Home</a>
-            <a href="index.html">Meals</a>
-            <a href="index.html">Sides</a>
-            <a href="index.html">Around the World</a>
+            <div class="dropdown">
+                <button class="dropbtn">Meals
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="meals-breakfast.html">Breakfast</a>
+                  <a href="meals-lunch.html">Lunch</a>
+                  <a href="meals-dinner.html">Dinner</a>
+                </div>
+            </div>
+            <a href="sides.html">Sides</a>
+            <a href="around_the_world.html">Around the World</a>
+            <a href="site-plan.html">Site Plan</a>
         </nav>
     </header>
     <main>
         <section class="hero">
-            <img id="hero-img" src="images/pexels-photo-2113556.jpeg" alt="plate of pancakes and fruits">
-            <h1 id="hero-title">Sides</h1>
-            <h3 class="breakfast-text">While a side dish isn’t always necessary in a meal, when it is included, it enhances the dining experience. Whether its a salad, cake, or healthy drink, having a side dish compliments your main spread, turning a simple meal into a mouthwatering feast. Especially during those times you want something light and quick, these dishes will come to the rescue!</h3>
+            <div id="hero-box">
+                <img id="hero-img" src="images/sides-hero.png" alt="plate of salad, chocolate cake, other sides">
+            </div>
+            <section id="hero-msg">
+                <h1 class="hero-subpage-title">Sides</h1>
+                <h3 class="breakfast-text">While a side dish isn’t always necessary in a meal, when it is included, it enhances the dining experience. Whether its a salad, cake, or healthy drink, having a side dish compliments your main spread, turning a simple meal into a mouthwatering feast. Especially during those times you want something light and quick, these dishes will come to the rescue!</h3>
+            </section>
         </section>
 
 <!-- Sandwiches section-->
 
-        <div class="sandwich-title">
-            <h2>Savory Sandwiches</h2>
-            <p>Are you a bread lover? These sandwich delicacies take your taste to the next level. Prepare them as a meal or use them as a side for another dish.</p>
+
+        <div class="sides-title">
+            <h2>Savory</h2>
+            <h2>Sandwiches</h2>
         </div>
+
         <div class="recipes">
+
             <section class="meal">
-                <img src="images/denver_burrito.png">
-                <h3>Hot Cheese-stuffed Roast Beef Sandwiches</h3>
-                <ul>
+                <img class="meal-image" src="images/hot_cheese.png" alt="image of dish">
+                <h3 class="meal-title">Hot Cheese-stuffed Roast Beef Sandwiches</h3>
+                <ul class="ingredient-list">
                     <i>
                     <li>4 French rolls (6 to 8-inch)</li>
                     <li>Horseradish sauce</li>
@@ -44,11 +62,13 @@
                     <li>8 lettuce leaves</li>
                     </i>
                 </ul>
-                <p><strong>4 servings</strong></p>
-                <p>Split French rolls lengthwise. Spread each half with horse-radish sauce. Arrange bottom halves of rolls on paper-towel-lined plate. Set aside. Set top halves of rolls aside. Sprinkle 1 tablespoon of cheese down the center of each beef slive. Roll up. Cut each roll-up in half crosswise. Arrange 4 halves on each bottom half of French rolls. Microwave at 70% (Medium High) for 2 to 3 &frac12; minutes, or until cheese melts, rotating plate once. Top each roll with 2 tomato slices, 2 green onions and 2 lettuce leaves. Top each sandwich with top halves of rolls.</p>
-                <table>
+                <div class="instructions">
+                    <p><strong>4 servings</strong></p>
+                    <p>Split French rolls lengthwise. Spread each half with horse-radish sauce. Arrange bottom halves of rolls on paper-towel-lined plate. Set aside. Set top halves of rolls aside. Sprinkle 1 tablespoon of cheese down the center of each beef slive. Roll up. Cut each roll-up in half crosswise. Arrange 4 halves on each bottom half of French rolls. Microwave at 70% (Medium High) for 2 to 3 &frac12; minutes, or until cheese melts, rotating plate once. Top each roll with 2 tomato slices, 2 green onions and 2 lettuce leaves. Top each sandwich with top halves of rolls.</p>
+                </div>
+                <table class="nutrition-info">
                     <tr>
-                        <th>Per Serving</th>
+                        <th style="text-align: center;">Per Serving</th>
                     </tr>
                     <tr>
                       <td>Calories</td>
@@ -70,9 +90,9 @@
             </section>
 
             <section class="meal">
-                <img src="images/denver_burrito.png">
-                <h3>Chili Chicken Croissants</h3>
-                <ul>
+                <img class="meal-image" src="images/chili_chicken_croissants.png" alt="image of dish">
+                <h3 class="meal-title">Chili Chicken Croissants</h3>
+                <ul class="ingredient-list">
                     <i>
                     <li>1 lb. boneless whole chicken breast, skin removed, cut into &frac34;-inch pieces</li>
                     <li>&frac12; teaspoon chili powder</li>
@@ -88,12 +108,13 @@
                     <li>Leaf lettuce</li>
                     </i>
                 </ul>
-                <p><strong>4 servings</strong></p>
-                <p>In a 2-quart casserole, combine chicken, chili powder, salt and garlic. Cover. Microwave at High for 4 to 6 minutes, or until chicken is no longer pink, stirring twice. Add celery, onions, red pepper, mayonnaise, sour cream, and chilies. Mix well. Chill for at least 2 hours. To serve, line each croissant with leaf lettuce and divide the chicken mixture into fourths. Spoon one-fourth of mixture into each croissant.</p>
-                
-                <table>
+                <div class="instructions">
+                    <p><strong>4 servings</strong></p>
+                    <p>In a 2-quart casserole, combine chicken, chili powder, salt and garlic. Cover. Microwave at High for 4 to 6 minutes, or until chicken is no longer pink, stirring twice. Add celery, onions, red pepper, mayonnaise, sour cream, and chilies. Mix well. Chill for at least 2 hours. To serve, line each croissant with leaf lettuce and divide the chicken mixture into fourths. Spoon one-fourth of mixture into each croissant.</p>
+                </div>
+                <table class="nutrition-info">
                     <tr>
-                        <th>Per Serving</th>
+                        <th style="text-align: center;">Per Serving</th>
                     </tr>
                     <tr>
                       <td>Calories</td>
@@ -115,9 +136,9 @@
             </section>
 
             <section class="meal">
-                <img src="images/denver_burrito.png">
-                <h3>Salmon-Vegetable Spread on Rye</h3>
-                <ul>
+                <img class="meal-image" src="images/salmon_rye.png" alt="image of dish">
+                <h3 class="meal-title">Salmon-Vegetable Spread on Rye</h3>
+                <ul class="ingredient-list">
                     <i>
                     <li>&frac12; cup finely chopped carrot</li>
                     <li>&frac12; cup finely chopped celery</li>
@@ -133,11 +154,13 @@
                     <li>&frac14; cup water</li>
                     </i>
                 </ul>
-                <p><strong>6 servings</strong></p>
-                <p>IN 1-quart casserole, combine carrot, celery and onion. Cover. Microwave at High for 2 to 3 minutes, or until vegetables are tender-crisp. Add salmon to vegetable mixture. Set aside. In small mixing bowl, microwave creamcheese at High for 15 to 30 seconds, or until softened. Add mayonnaise, dill weed, and salt. Mix well. Cover and chill mixture for 2 hours. To serve, spread each slive of bread evenly with salmon and vegetable mixture. Top each open-face sandwich with 2 hard-cooked egg slices and 2 cucumber slices. Garnish with sprigs of fresh dill, if desired.</p>
-                <table>
+                <div class="instructions">
+                    <p><strong>6 servings</strong></p>
+                    <p>IN 1-quart casserole, combine carrot, celery and onion. Cover. Microwave at High for 2 to 3 minutes, or until vegetables are tender-crisp. Add salmon to vegetable mixture. Set aside. In small mixing bowl, microwave creamcheese at High for 15 to 30 seconds, or until softened. Add mayonnaise, dill weed, and salt. Mix well. Cover and chill mixture for 2 hours. To serve, spread each slive of bread evenly with salmon and vegetable mixture. Top each open-face sandwich with 2 hard-cooked egg slices and 2 cucumber slices. Garnish with sprigs of fresh dill, if desired.</p>
+                </div>
+                <table class="nutrition-info">
                     <tr>
-                        <th>Per Serving</th>
+                        <th style="text-align: center;">Per Serving</th>
                     </tr>
                     <tr>
                       <td>Calories</td>
@@ -161,14 +184,16 @@
 
 <!-- Salads section-->
 
-        <div class="sandwich-title">
-            <h2>Scrumptious Side Salads</h2>
+        <div class="sides-title">
+            <h2>Scrumptious</h2>
+            <h2>Salads</h2>
         </div>
+
         <div class="recipes">
             <section class="meal">
-                <img src="images/denver_burrito.png">
-                <h3>Chinese Coleslaw</h3>
-                <ul>
+                <img class="meal-image" src="images/chinese_coleslaw.png" alt="image of dish">
+                <h3 class="meal-title">Chinese Coleslaw</h3>
+                <ul class="ingredient-list">
                     <i>
                     <li>&frac34; lb. Chinese cabbage (Napa)</li>
                     <li>&frac34; cup shredded carrot</li>
@@ -184,11 +209,13 @@
                     <li>&frac18; teaspoon sesame oil</li>
                     </i>
                 </ul>
-                <p><strong>4 to 6 servings</strong></p>
-                <p>Remove and discard 1-inch portion from stem of cabbage. Shred leafy portion and thinly slice stalk portion from each leaf (about 5 cups). In medium mixing bowl, combine cabbage, carrot, green pepper, and onion. Set aside. In 2-cup measure, combine all dressing ingredients. Microwave at High for 1 to 1 &frac34; minutes, or until dressing boils, stirring once. Stir to dissolve any remaining sugar. Pour hot dressing over cabbage. Toss to coat. Cover and chill at least 1 &frac12; hours.</p>
-                <table>
+                <div class="instructions">
+                    <p><strong>4 to 6 servings</strong></p>
+                    <p>Remove and discard 1-inch portion from stem of cabbage. Shred leafy portion and thinly slice stalk portion from each leaf (about 5 cups). In medium mixing bowl, combine cabbage, carrot, green pepper, and onion. Set aside. In 2-cup measure, combine all dressing ingredients. Microwave at High for 1 to 1 &frac34; minutes, or until dressing boils, stirring once. Stir to dissolve any remaining sugar. Pour hot dressing over cabbage. Toss to coat. Cover and chill at least 1 &frac12; hours.</p>
+                </div>
+                <table class="nutrition-info">
                     <tr>
-                        <th>Per Serving</th>
+                        <th style="text-align: center;">Per Serving</th>
                     </tr>
                     <tr>
                       <td>Calories</td>
@@ -210,9 +237,9 @@
             </section>
 
             <section class="meal">
-                <img src="images/denver_burrito.png">
-                <h3>Oriental Pasta & Vegetable Salad</h3>
-                <ul>
+                <img class="meal-image" src="images/oriental_pasta2.png" alt="image of dish">
+                <h3 class="meal-title">Oriental Pasta & Vegetable Salad</h3>
+                <ul class="ingredient-list">
                     <i>
                     <li>1 pkg. (10 oz.) frozen cut green beans</li>
                     <li>1 cup uncooked mostaccioli</li>
@@ -228,12 +255,13 @@
                    
                     </i>
                 </ul>
-                <p><strong>6 to 8 servings</strong></p>
-                <p>In a 1-quart casserole, microwave beans at High for 4 to 6 minutes, or until defrosted, stirring 2 or 3 times to break apart. Drain. Set aside. Prepare mostaccioli as directed on package. Rinse and drain. In a large bowl, combine beans, cooked mostaccioli, the cauliflowerets, tomatoes, mushrooms, and onions. Set aside. In a small mixing bowl, combine remaining ingredients. Beat with whisk until combined. Pour mayonnaise mixture over pasta and vegetable mixture. Toss to coat. Chill salad for at least 4 hours or overnight.</p>
-                
-                <table>
+                <div class="instructions">
+                    <p><strong>6 to 8 servings</strong></p>
+                    <p>In a 1-quart casserole, microwave beans at High for 4 to 6 minutes, or until defrosted, stirring 2 or 3 times to break apart. Drain. Set aside. Prepare mostaccioli as directed on package. Rinse and drain. In a large bowl, combine beans, cooked mostaccioli, the cauliflowerets, tomatoes, mushrooms, and onions. Set aside. In a small mixing bowl, combine remaining ingredients. Beat with whisk until combined. Pour mayonnaise mixture over pasta and vegetable mixture. Toss to coat. Chill salad for at least 4 hours or overnight.</p>
+                </div>
+                <table class="nutrition-info">
                     <tr>
-                        <th>Per Serving</th>
+                        <th style="text-align: center;">Per Serving</th>
                     </tr>
                     <tr>
                       <td>Calories</td>
@@ -255,9 +283,9 @@
             </section>
 
             <section class="meal">
-                <img src="images/denver_burrito.png">
-                <h3>New Potato & Avocado Salad</h3>
-                <ul>
+                <img class="meal-image" src="images/new_potato.png" alt="image of dish">
+                <h3 class="meal-title">New Potato & Avocado Salad</h3>
+                <ul class="ingredient-list">
                     <i>
                     <li>2 lbs. whole new potatoes (about 15 potatoes)</li>
                     <li>&frac14; cup water</li>
@@ -277,12 +305,14 @@
                     <li>1 cup sliced radishes</li>
                     </i>
                 </ul>
-                <p><strong>6 to 8 servings</strong></p>
-                <p>Pierce potatoes with fork. In a 3-quart casserole, place potatoes and water. Cover. Microwave at High for 13 to 18 munites, or until tender, rearranging once. Let cool slightly. Slice potatoes into &frac12;-inch slices. Place potato slices and red onion in large mixing bowl or salad bowl. Set aside.</p>
-                <p>In a small mixing bowl, combine all dressing ingredients. Mix well. Add dressing to potatoes and onions. Toss gently to coat. Cover with plastic wrap. Chill at least 4 hours or overnight. Just before serving, place 2 tablespoons of lemon juice into 9-inch pie plate. Dip each avocado slice in lemon juice. Add avocado, cucumber, and radish slices to potato mixture. Toss gently. Serve immediately.</p>
-                <table>
+                <div class="instructions">
+                    <p><strong>6 to 8 servings</strong></p>
+                    <p>Pierce potatoes with fork. In a 3-quart casserole, place potatoes and water. Cover. Microwave at High for 13 to 18 munites, or until tender, rearranging once. Let cool slightly. Slice potatoes into &frac12;-inch slices. Place potato slices and red onion in large mixing bowl or salad bowl. Set aside.</p>
+                    <p>In a small mixing bowl, combine all dressing ingredients. Mix well. Add dressing to potatoes and onions. Toss gently to coat. Cover with plastic wrap. Chill at least 4 hours or overnight. Just before serving, place 2 tablespoons of lemon juice into 9-inch pie plate. Dip each avocado slice in lemon juice. Add avocado, cucumber, and radish slices to potato mixture. Toss gently. Serve immediately.</p>
+                </div>
+                <table class="nutrition-info">
                     <tr>
-                        <th>Per Serving</th>
+                        <th style="text-align: center;">Per Serving</th>
                     </tr>
                     <tr>
                       <td>Calories</td>
@@ -307,15 +337,16 @@
 
 <!-- Desserts section-->
 
-        <div class="sandwich-title">
-            <h2>Delicious Desserts</h2>
-            <p>Are you a bread lover? These sandwich delicacies take your taste to the next level. Prepare them as a meal or use them as a side for another dish.</p>
+        <div class="sides-title">
+            <h2>Delicious</h2>
+            <h2>Desserts</h2>
         </div>
+
         <div class="recipes">
             <section class="meal">
-                <img src="images/denver_burrito.png">
-                <h3>Spumoni Cake</h3>
-                <ul>
+                <img class="meal-image" src="images/spumoni_cake.png" alt="image of dish">
+                <h3 class="meal-title">Spumoni Cake</h3>
+                <ul class="ingredient-list">
                     <i>
                     <li>1 pkg. (18 &frac14; oz.) white cake mix</li>
                     <li>&frac12; cup chopped maraschino cherries</li>
@@ -325,18 +356,20 @@
                     <li>6 drops green food coloring</li>
                     <li>1 &frac12; cups whipping cream</li>
                     <li>1 carton (15 oz.) ricotta cheese</li>
-                    <li>1 &frac14; cups powdered sugar/li>
+                    <li>1 &frac14; cups powdered sugar</li>
                     <li>1 &frac12; teaspoons vanilla</li>
                     </i>
                 </ul>
-                <p><strong>12 servings</strong></p>
-                <p>Heat conventional oven to 350°F. Grease and flour two 8-inch round cake pans. Prepare cake mix as dirented on package. Place one-half of batter (about 2 &frac14; cups) in medium mixing bowl. Set aside. To remaining batter add maraschino cherries, cherry extract, and red food coloring. Mix well.</p>
-                <p>Spread evenly in one prepared pan. To remaining butter, add &frac12; cup pistachio nuts and the green food coloring. Mix well. Spread evenly in remaining prepared pan. Bake at 350°F for 28 to 35 minutes, or until wooden pick inserted in center comes out clean. Cool for 15 miutes. Remove from pans and cool for at least 2 hours.</p>
-                <p>Beat whipping cream in large mixing bowl at high speed of electric mixer until soft peaks form. Set aside. In medium mixing bowl, combine ricotta cheese, sugar, and vanilla. Mix well. Fold into whipped cream. Set aside. Using serated knife, carefully slice cake layers horizontally in half to make 4 thin cake layers.</p>
-                <p>Place bottom of cherry cake layer on serving platter. Spread with about &frac12; cup frosting. Top with 1 pistachio layer. Spread with about &frac12; cup frosting. Repeat with remaining cake layers. Spread top and sides of cake with remaining frosting. Chill cake for at least 2 hours or overnight. Garnish with remaining 1 tablespoon pistachio nuts.</p>
-                <table>
+                <div class="instructions">
+                    <p><strong>12 servings</strong></p>
+                    <p>Heat conventional oven to 350°F. Grease and flour two 8-inch round cake pans. Prepare cake mix as dirented on package. Place one-half of batter (about 2 &frac14; cups) in medium mixing bowl. Set aside. To remaining batter add maraschino cherries, cherry extract, and red food coloring. Mix well.</p>
+                    <p>Spread evenly in one prepared pan. To remaining butter, add &frac12; cup pistachio nuts and the green food coloring. Mix well. Spread evenly in remaining prepared pan. Bake at 350°F for 28 to 35 minutes, or until wooden pick inserted in center comes out clean. Cool for 15 miutes. Remove from pans and cool for at least 2 hours.</p>
+                    <p>Beat whipping cream in large mixing bowl at high speed of electric mixer until soft peaks form. Set aside. In medium mixing bowl, combine ricotta cheese, sugar, and vanilla. Mix well. Fold into whipped cream. Set aside. Using serated knife, carefully slice cake layers horizontally in half to make 4 thin cake layers.</p>
+                    <p>Place bottom of cherry cake layer on serving platter. Spread with about &frac12; cup frosting. Top with 1 pistachio layer. Spread with about &frac12; cup frosting. Repeat with remaining cake layers. Spread top and sides of cake with remaining frosting. Chill cake for at least 2 hours or overnight. Garnish with remaining 1 tablespoon pistachio nuts.</p>
+                </div>
+                <table class="nutrition-info">
                     <tr>
-                        <th>Per Serving</th>
+                        <th style="text-align: center;">Per Serving</th>
                     </tr>
                     <tr>
                     <td>Calories</td>
@@ -358,9 +391,9 @@
             </section>
 
             <section class="meal">
-                <img src="images/denver_burrito.png">
-                <h3>Decadent Chocolate Torte</h3>
-                <ul>
+                <img class="meal-image" src="images/chocolate_torte2.png" alt="image of dish">
+                <h3 class="meal-title">Decadent Chocolate Torte</h3>
+                <ul class="ingredient-list">
                     <i>
                     <li>1 pkg. (8 oz.) unsweetened chocolate, divided</li>
                     <li>&frac23; cup plus 2 tablespoons margarine or butter, divided</li>
@@ -373,17 +406,19 @@
                     <li>2 tablespoons water</li>
                     </i>
                 </ul>
-                <p><strong>12 servings</strong></p>
-                <p>Heat conventional oven to 350°F. Grease and flour 9-inch round cake pan. Set aside. In a medium mixing bowl, combine 6 oz. chocolate, &frac23; cup margarine and &frac34; cup sugar.</p>
-                <p>Microwave at 50% (Medium) for 4 to 5 &frac12; minutes, or until mixture can be stirred smooth, stirring 2 or 3 times. Stir in 1 cup ground almonds, the flour, egg yolks, and extract. Mix well. Set aside.</p>
-                <p>Beat egg white in medium mixing bowl at high speed of electric mixer until foamy. Gradually add remaining &frac14; cup sugar, beating until stiff peaks form. Fold egg whites into chocolate batter.</p>
-                <p>Spread batter in prepared plan. Bake for 30 minutes, or until wooden pick inserted in center comes out clean. Let cool for 10 minutes. Insert on serving plate. Cover and cool completely.</p>
-                <p>Place remaining 2 tablespoons margarine and 2 oz. chocolate in 2-cup measure. Microwave at 50% (Medium) for 1 &frac12; to 2 &frac12; minutes, or until margarine is melted and mixture can be stirred smooth.</p>
-                <p>Stir in powdered sugar. Stir in water. Stir with whisk until smooth. Pour over torte. Spread to coat top of cake, allowing glaze to run down sides. Decorate the edges of torte with remaining &frac14; cup of ground almonds.</p>
+                <div class="instructions">
+                    <p><strong>12 servings</strong></p>
+                    <p>Heat conventional oven to 350°F. Grease and flour 9-inch round cake pan. Set aside. In a medium mixing bowl, combine 6 oz. chocolate, &frac23; cup margarine and &frac34; cup sugar.</p>
+                    <p>Microwave at 50% (Medium) for 4 to 5 &frac12; minutes, or until mixture can be stirred smooth, stirring 2 or 3 times. Stir in 1 cup ground almonds, the flour, egg yolks, and extract. Mix well. Set aside.</p>
+                    <p>Beat egg white in medium mixing bowl at high speed of electric mixer until foamy. Gradually add remaining &frac14; cup sugar, beating until stiff peaks form. Fold egg whites into chocolate batter.</p>
+                    <p>Spread batter in prepared plan. Bake for 30 minutes, or until wooden pick inserted in center comes out clean. Let cool for 10 minutes. Insert on serving plate. Cover and cool completely.</p>
+                    <p>Place remaining 2 tablespoons margarine and 2 oz. chocolate in 2-cup measure. Microwave at 50% (Medium) for 1 &frac12; to 2 &frac12; minutes, or until margarine is melted and mixture can be stirred smooth.</p>
+                    <p>Stir in powdered sugar. Stir in water. Stir with whisk until smooth. Pour over torte. Spread to coat top of cake, allowing glaze to run down sides. Decorate the edges of torte with remaining &frac14; cup of ground almonds.</p>
+                </div>
                 
-                <table>
+                <table class="nutrition-info">
                     <tr>
-                        <th>Per Serving</th>
+                        <th style="text-align: center;">Per Serving</th>
                     </tr>
                     <tr>
                     <td>Calories</td>
@@ -405,24 +440,26 @@
             </section>
 
             <section class="meal">
-                <img src="images/denver_burrito.png">
-                <h3>Fresh Pineapple Sorbet</h3>
-                <ul>
+                <img class="meal-image" src="images/pineapple_sorbet.png" alt="image of dish">
+                <h3 class="meal-title">Fresh Pineapple Sorbet</h3>
+                <ul class="ingredient-list">
                     <i>
                     <li>2 cans water</li>
                     <li>2 cans sugar</li>
                     <li>1 fresh pineapple (about 3 &frac12; to 4 lbs.)</li>
                     </i>
                 </ul>
-                <p><strong>8 servings</strong></p>
-                <p>Combine water and sugar in 8-cup measure. Microwave at High for 6 to 7 minutes, or until sugar is dissolved, stirring twice. Set aside.</p>
-                <p>Cut pineapple in half lengthwise, leaving leafy portions attached. With thin, flexible knife, loosen and remove fruit, leaving &frac12;-inch shells. Place each shell in a large plastic food-storage bag. Place in freezer.</p>
-                <p>Cut and discard core from fruit. Place fruit in blender or food processor. Process until smooth (about 2 cups puréed fruit). Add puréed pineapple to sugar-water mixture. Stir to combine.</p>
-                <p>Pour mixture into 12 x 8-inch baking dish. Freeze for 4 to 6 hours, or until firm, stirring once every hour to break apart mixture. Cover with plastic wrap and freeze overnight, if desired.</p>
-                <p>Let sorbet stand at room temperature for 5 to 10 minutes to soften. Using an ice cream scoop, form mixture into balls. Serve sorbet from frozen pineapple shells.</p>
-                <table>
+                <div class="instructions">
+                    <p><strong>8 servings</strong></p>
+                    <p>Combine water and sugar in 8-cup measure. Microwave at High for 6 to 7 minutes, or until sugar is dissolved, stirring twice. Set aside.</p>
+                    <p>Cut pineapple in half lengthwise, leaving leafy portions attached. With thin, flexible knife, loosen and remove fruit, leaving &frac12;-inch shells. Place each shell in a large plastic food-storage bag. Place in freezer.</p>
+                    <p>Cut and discard core from fruit. Place fruit in blender or food processor. Process until smooth (about 2 cups puréed fruit). Add puréed pineapple to sugar-water mixture. Stir to combine.</p>
+                    <p>Pour mixture into 12 x 8-inch baking dish. Freeze for 4 to 6 hours, or until firm, stirring once every hour to break apart mixture. Cover with plastic wrap and freeze overnight, if desired.</p>
+                    <p>Let sorbet stand at room temperature for 5 to 10 minutes to soften. Using an ice cream scoop, form mixture into balls. Serve sorbet from frozen pineapple shells.</p>
+                </div>
+                <table class="nutrition-info">
                     <tr>
-                        <th>Per Serving</th>
+                        <th style="text-align: center;">Per Serving</th>
                     </tr>
                     <tr>
                     <td>Calories</td>
@@ -446,15 +483,17 @@
         
 <!-- Drinks section-->
 
-        <div class="sandwich-title">
+        <div class="sides-title">
+            <h2>Drowning in</h2>
             <h2>Drinks</h2>
-            <p>Are you a bread lover? These sandwich delicacies take your taste to the next level. Prepare them as a meal or use them as a side for another dish.</p>
+        </div>
+
         </div>
         <div class="recipes">
             <section class="meal">
-                <img src="images/denver_burrito.png">
-                <h3>In-A-Hurry Health Drink</h3>
-                <ul>
+                <img class="meal-image" src="images/health_drink.png" alt="image of dish">
+                <h3 class="meal-title">In-A-Hurry Health Drink</h3>
+                <ul class="ingredient-list">
                     <i>
                     <li>&frac12; cup frozen sliced peaches, strawberries, or blueberries</li>
                     <li>&frac12; cup buttermilk</li>
@@ -464,11 +503,13 @@
                     <li>1 tablespoon honey</li>
                     </i>
                 </ul>
-                <p><strong>1 serving</strong></p>
-                <p>In a small mixing bowl, microwave fruit at High for 45 seconds to 1 minute, or until cold but not icy. Combine fruit and remaining ingredients in blender or food processor. Process until mixture is smooth and frothy. Serve immediately.</p>
-                <table>
+                <div class="instructions">
+                    <p><strong>1 serving</strong></p>
+                    <p>In a small mixing bowl, microwave fruit at High for 45 seconds to 1 minute, or until cold but not icy. Combine fruit and remaining ingredients in blender or food processor. Process until mixture is smooth and frothy. Serve immediately.</p>
+                </div>
+                <table class="nutrition-info">
                     <tr>
-                        <th>Per Serving</th>
+                        <th style="text-align: center;">Per Serving</th>
                     </tr>
                     <tr>
                     <td>Calories</td>
@@ -490,21 +531,23 @@
             </section>
 
             <section class="meal">
-                <img src="images/denver_burrito.png">
-                <h3>Pineapple-Orange Banana Cooler</h3>
-                <ul>
+                <img class="meal-image" src="images/pineapple_cooler.png" alt="image of dish">
+                <h3 class="meal-title">Pineapple-Orange Banana Cooler</h3>
+                <ul class="ingredient-list">
                     <i>
                     <li>1 carton (64 oz.) pineapple-orange banana juice</li>
                     <li>1 quart club soda or carbonated lemon-lime soda.</li>
                     <li>1 orange, halved and sliced</li>
                     </i>
                 </ul>
-                <p><strong>about 16 servings</strong></p>
-                <p>In a 3-quart pitcher, combine juice and club soda. Add orange slices, and stire to combine. Pour cooler into glasses.</p>
+                <div class="instructions">
+                    <p><strong>about 16 servings</strong></p>
+                    <p>In a 3-quart pitcher, combine juice and club soda. Add orange slices, and stire to combine. Pour cooler into glasses.</p>
+                </div>
                 
-                <table>
+                <table class="nutrition-info">
                     <tr>
-                        <th>Per Serving</th>
+                        <th style="text-align: center;">Per Serving</th>
                     </tr>
                     <tr>
                     <td>Calories</td>
@@ -528,24 +571,32 @@
     </main>
     <footer>
         <div class="footer-top">
-            <img src="images/first_logo.png" alt="logo">
+            <img class="logo" src="images/first_logo.png" alt="logo">
             <section class="credits">
                 <h3>RECIPES FROM:</h3>
-                <p><i>Easy Microwave Menus</i> by Barbara Methven</p>
-                <p><i>The Kids' Around the World Cookbook</i> by Deri Robins</p>
+                <p><i style="color: white;"><a href="https://www.thriftbooks.com/w/easy-microwave-menus_barbara-methven_barbara-methuen/2242428/#edition=692120&idiq=1178027" target="_blank">Easy Microwave Menus</a></i> by Barbara Methven</p>
+                <p><i style="color: white;"><a href="https://www.amazon.com/Kids-Around-World-Cookbook/dp/1856979970" target="_blank">The Kids' Around the World Cookbook</a></i> by Deri Robins</p>
             </section>
             <section class="contacts">
                 <h3>Contact Us</h3>
                 <p>+1-234-567-8900</p>
                 <p>thecuisinemachine@gmail.com</p>
-                <img src="#" alt="facebook">
-                <img src="#" alt="instagram">
-                <img src="#" alt="twitter">
-                <img src="#" alt="linkedin">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/fb_icon.png" alt="facebook">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/ig_icon.png" alt="instagram">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twt_icon.png" alt="twitter">
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <img src="images/in_icon.png" alt="linkedin">
+                </a>
             </section>
         </div>
         <div class="footer-bottom">
-            <p>The Cuisine Machine c 2022 | Henrietta Gabriel | WDD130-24</p>
+            <p>The Cuisine Machine &copy; 2022 | Henrietta Gabriel | WDD130-24</p>
             <a href="site-plan.html">Site Plan</a>
         </div>
     </footer>

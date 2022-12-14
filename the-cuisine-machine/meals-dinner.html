@@ -5,29 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Cuisine Machine | Meals | Dinner</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
-        <img src="images/first_logo.png" alt="logo">
+        <img class="logo" src="images/first_logo.png" alt="logo">
         <nav>
             <a href="index.html">Home</a>
-            <a href="index.html">Meals</a>
-            <a href="index.html">Sides</a>
-            <a href="index.html">Around the World</a>
+            <div class="dropdown">
+                <button class="dropbtn">Meals
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="meals-breakfast.html">Breakfast</a>
+                  <a href="meals-lunch.html">Lunch</a>
+                  <a href="meals-dinner.html">Dinner</a>
+                </div>
+            </div>
+            <a href="sides.html">Sides</a>
+            <a href="around_the_world.html">Around the World</a>
+            <a href="site-plan.html">Site Plan</a>
         </nav>
     </header>
     <main>
         <section class="hero">
-            <img id="hero-img" src="images/pexels-photo-2113556.jpeg" alt="plate of pancakes and fruits">
-            <h1 id="hero-title">Dinner</h1>
-            <h3 class="breakfast-text">At last, the day is ending. You need one more kicker to make sure that no matter what enfolded during the day, you finish with a bang. Having a nutritious dinner is linked to good sleep, better choices at breakfast and lunch, and various other health benefits. For those of you eating with a party or your family, these meals can help you bond with those around you, as well as serve as a conversation starter about how good they are. Don’t shy away from the thought that preparing a healthy and delicious dinner can be a simple and enjoyable process.</h3>
+            <div id="hero-box">
+                <img id="hero-img" src="images/dinner-hero.png" alt="bowl of dinner with a fork">
+            </div>
+            <section id="hero-msg">
+                <h1 class="hero-subpage-title">Dinner</h1>
+                <h3 class="breakfast-text">At last, the day is ending. You need one more kicker to make sure that no matter what enfolded during the day, you finish with a bang. Having a nutritious dinner is linked to good sleep, better choices at breakfast and lunch, and various other health benefits. For those of you eating with a party or your family, these meals can help you bond with those around you, as well as serve as a conversation starter about how good they are. Don’t shy away from the thought that preparing a healthy and delicious dinner can be a simple and enjoyable process.</h3>
+            </section>
         </section>
+        
         <div class="recipes">
 
             <section class="meal">
-                <img src="images/denver_burrito.png">
-                <h3>Tuna Noodle Parmesan</h3>
-                <ul>
+                <img class="meal-image" src="images/tuna_noodle.png" alt="image of dish">
+                <h3 class="meal-title">Tuna Noodle Parmesan</h3>
+                <ul class="ingredient-list">
                     <i>
                     <li>1 pkg. (10 oz.) uncookied wide egg noodles</li>
                     <li>1 tablespoon olive oil</li>
@@ -42,12 +58,14 @@
                     <li>&frac14; cup shredded fresh Parmesan cheese</li>
                     </i>
                 </ul>
-                <p><strong>4 to 6 servings</strong></p>
-                <p>Prepare egg noodles as directed on package. Rinse and drain. Toss with olive oil. Cover to keep warm. Set aside. Place pease in 1-quart casserole. Cover Microwave at High for 3 to 5 minutes, or until defrosted, stirring once to break apart. Drain. Set aside.</p>
-                <p>In 1 &frac12;-quart casserole, place white sauce mix, garlic, fennel, and pepper. Blend in milk. Microwve at High for 7 to 9 minutes; or until mixture thickens and bubbles, stirring 2 or 3 times. Add peas and tuna to sauce. Mix well. Cover. Microwave at High for 3 to 4 minutes, or until peas are hot, stirring once. Spoon tuna mixture over noodles. Top with tomatoes. Sprinkle with cheese.</p>
-                <table>
+                <div class="instructions">
+                    <p><strong>4 to 6 servings</strong></p>
+                    <p>Prepare egg noodles as directed on package. Rinse and drain. Toss with olive oil. Cover to keep warm. Set aside. Place pease in 1-quart casserole. Cover Microwave at High for 3 to 5 minutes, or until defrosted, stirring once to break apart. Drain. Set aside.</p>
+                    <p>In 1 &frac12;-quart casserole, place white sauce mix, garlic, fennel, and pepper. Blend in milk. Microwve at High for 7 to 9 minutes; or until mixture thickens and bubbles, stirring 2 or 3 times. Add peas and tuna to sauce. Mix well. Cover. Microwave at High for 3 to 4 minutes, or until peas are hot, stirring once. Spoon tuna mixture over noodles. Top with tomatoes. Sprinkle with cheese.</p>
+                </div>
+                <table class="nutrition-info">
                     <tr>
-                        <th>Per Serving</th>
+                        <th style="text-align: center;">Per Serving</th>
                     </tr>
                     <tr>
                       <td>Calories</td>
@@ -69,9 +87,9 @@
             </section>
 
             <section class="meal">
-                <img src="images/denver_burrito.png">
-                <h3>Saucy Mushroom-stuffed Burgers</h3>
-                <ul>
+                <img class="meal-image" src="images/saucy_burgers.png" alt="image of dish">
+                <h3 class="meal-title">Saucy Mushroom-stuffed Burgers</h3>
+                <ul class="ingredient-list">
                     <i>
                     <li>1 &frac12; lbs. ground beef</li>
                     <li>&frac23; cup seasoned croutons, finely crushed</li>
@@ -90,14 +108,16 @@
                     <li>4 onion bagels</li>
                     </i>
                 </ul>
-                <p><strong>4 servings</strong></p>
-                <p>Combine ground beef, croutons, egg, onion, 2 tablespoons parsley, the mustard, pepper, and salt in a medium mixing bowl. Shape ground beef mixture into 8 patties, each about 4 inches in diameter. Set aside.</p>
-                <p>Microwave cream cheese in 1-quart casserole at High for 15 to 30 seconds, or until softened. Add chopped mushrooms, remaining 1 tablespoon parsley and the salt. Mix well.</p>
-                <p>Mound &frac14; cup cream cheese mixture in center of each of the 4 patties. Top with remaining patties. Pinch edges to seal securely. Place burgers on conventional broiler pan. Place under conventional broiler 3 inches from heat. Broil until medium doneness, about 5 to 7 minutes on each side.</p>
-                <p>Place sliced mushrooms and margarine in 1-quart casserole. Microwave at High for 2 to 3 minutes, or until margarine is melted. Add gravy mix. Mix well. Blend in water. Microwave at High for 8 to 10 minutes, or until mixture thickens and bubbles, stirring 2 or 3 times. Serve burgers on bagels with gravy.</p>
-                <table>
+                <div class="instructions">
+                    <p><strong>4 servings</strong></p>
+                    <p>Combine ground beef, croutons, egg, onion, 2 tablespoons parsley, the mustard, pepper, and salt in a medium mixing bowl. Shape ground beef mixture into 8 patties, each about 4 inches in diameter. Set aside.</p>
+                    <p>Microwave cream cheese in 1-quart casserole at High for 15 to 30 seconds, or until softened. Add chopped mushrooms, remaining 1 tablespoon parsley and the salt. Mix well.</p>
+                    <p>Mound &frac14; cup cream cheese mixture in center of each of the 4 patties. Top with remaining patties. Pinch edges to seal securely. Place burgers on conventional broiler pan. Place under conventional broiler 3 inches from heat. Broil until medium doneness, about 5 to 7 minutes on each side.</p>
+                    <p>Place sliced mushrooms and margarine in 1-quart casserole. Microwave at High for 2 to 3 minutes, or until margarine is melted. Add gravy mix. Mix well. Blend in water. Microwave at High for 8 to 10 minutes, or until mixture thickens and bubbles, stirring 2 or 3 times. Serve burgers on bagels with gravy.</p>
+                </div>
+                <table class="nutrition-info">
                     <tr>
-                        <th>Per Serving</th>
+                        <th style="text-align: center;">Per Serving</th>
                     </tr>
                     <tr>
                       <td>Calories</td>
@@ -119,9 +139,9 @@
             </section>
 
             <section class="meal">
-                <img src="images/denver_burrito.png">
-                <h3>Whole Roasted Chicken with Harvest Vegetables</h3>
-                <ul>
+                <img class="meal-image" src="images/whole_chicken.png" alt="image of dish">
+                <h3 class="meal-title">Whole Roasted Chicken with Harvest Vegetables</h3>
+                <ul class="ingredient-list">
                     <i>
                     <li>&frac12; teaspoon poultry seasoning</li>
                     <li>&frac14; teaspoon paprika</li>
@@ -137,11 +157,14 @@
                     <li>&frac14; cup water</li>
                     </i>
                 </ul>
-                <p><strong>4 servings</strong></p>
-                <p>In a small bowl, combine poultry seasoning, paprika, salt, garlic powder, and pepper. Rub mixture evenly over chicken. Set aside. Place flour in nylon cooking bag. Shake to coat bag. Add seasoned chicken and remaining ingredients. Secure bag loosely with nylon tie or string. Place in 10-inch square casserole. Microwave at High for 25 to 30 minutes, or until legs move freely and juices run clear, rotating dish for 2 or 3 times. Let bag stand, closed, for 10 minutes.</p>
-                <table>
+                <div class="instructions">
+                    <p><strong>4 servings</strong></p>
+                    <p>In a small bowl, combine poultry seasoning, paprika, salt, garlic powder, and pepper. Rub mixture evenly over chicken. Set aside. Place flour in nylon cooking bag. Shake to coat bag. Add seasoned chicken and remaining ingredients. Secure bag loosely with nylon tie or string.</p>
+                    <p>Place in 10-inch square casserole. Microwave at High for 25 to 30 minutes, or until legs move freely and juices run clear, rotating dish for 2 or 3 times. Let bag stand, closed, for 10 minutes.</p>
+                </div>
+                <table class="nutrition-info">
                     <tr>
-                        <th>Per Serving</th>
+                        <th style="text-align: center;">Per Serving</th>
                     </tr>
                     <tr>
                       <td>Calories</td>
@@ -166,24 +189,32 @@
     </main>
     <footer>
         <div class="footer-top">
-            <img src="images/first_logo.png" alt="logo">
+            <img class="logo" src="images/first_logo.png" alt="logo">
             <section class="credits">
                 <h3>RECIPES FROM:</h3>
-                <p><i>Easy Microwave Menus</i> by Barbara Methven</p>
-                <p><i>The Kids' Around the World Cookbook</i> by Deri Robins</p>
+                <p><i style="color: white;"><a href="https://www.thriftbooks.com/w/easy-microwave-menus_barbara-methven_barbara-methuen/2242428/#edition=692120&idiq=1178027" target="_blank">Easy Microwave Menus</a></i> by Barbara Methven</p>
+                <p><i style="color: white;"><a href="https://www.amazon.com/Kids-Around-World-Cookbook/dp/1856979970" target="_blank">The Kids' Around the World Cookbook</a></i> by Deri Robins</p>
             </section>
             <section class="contacts">
                 <h3>Contact Us</h3>
                 <p>+1-234-567-8900</p>
                 <p>thecuisinemachine@gmail.com</p>
-                <img src="#" alt="facebook">
-                <img src="#" alt="instagram">
-                <img src="#" alt="twitter">
-                <img src="#" alt="linkedin">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/fb_icon.png" alt="facebook">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/ig_icon.png" alt="instagram">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twt_icon.png" alt="twitter">
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <img src="images/in_icon.png" alt="linkedin">
+                </a>
             </section>
         </div>
         <div class="footer-bottom">
-            <p>The Cuisine Machine c 2022 | Henrietta Gabriel | WDD130-24</p>
+            <p>The Cuisine Machine &copy; 2022 | Henrietta Gabriel | WDD130-24</p>
             <a href="site-plan.html">Site Plan</a>
         </div>
     </footer>

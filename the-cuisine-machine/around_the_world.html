@@ -5,175 +5,207 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Cuisine Machine | Home</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
-        <img src="images/first_logo.png" alt="logo">
+        <img class="logo" src="images/first_logo.png" alt="logo">
         <nav>
             <a href="index.html">Home</a>
-            <a href="index.html">Meals</a>
-            <a href="index.html">Sides</a>
-            <a href="index.html">Around the World</a>
+            <div class="dropdown">
+                <button class="dropbtn">Meals
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="meals-breakfast.html">Breakfast</a>
+                  <a href="meals-lunch.html">Lunch</a>
+                  <a href="meals-dinner.html">Dinner</a>
+                </div>
+            </div>
+            <a href="sides.html">Sides</a>
+            <a href="around_the_world.html">Around the World</a>
+            <a href="site-plan.html">Site Plan</a>
         </nav>
     </header>
     <main>
-        <div>
-            <img src="#" alt="world_img">
-            <h1 class="title">AROUND THE WORLD</h1>
-            <h3>What better way to enjoy the culinary experience than to do it from various locations around the globe. Take a savory ride to multiple destinations as you incorporate these delectable and eye-opening additions into your kitchen.</h3>
-            <img src="#" alt="plane_img">
-        </div>
-
-        <section class="world_meals">
-            <img src="images/denver_burrito.png">
-            <h3>Netherlands - Apple Pancakes</h3>
-            <ul>
-                <i>
-                <li>1 cup flour</li>
-                <li>pinch of salt/li>
-                <li>1 &frac13; cups milk</li>
-                <li>1 large egg</li>
-                <li>2 tablespoons butter</li>
-                <li>3 large eating apples</li>
-                <li>1 tablespoon water</li>
-                <li>small bar of chocolate</li>
-                </i>
-            </ul>
-            <ol>
-                <li>Sift the flour and salt into a bowl. Beat the egg and milk into the flour, to make a batter.</li>
-                <li>Peel, core, and slice the apples. Put them in a pan with the water, and simmer for five minutes.</li>
-                <li>Melt a little butter over a gentle heat in a small frying pan. Pour in enough batter to cover the bottom.</li>
-                <li>Lift the pancake out when it's cooked on both sides. Put it into a warm over while you make the next one.</li>
-                <li>Put some apple on eachpancake, and fold in half. Top with grated chocolate.</li>
-            </ol>
+        <section class="hero">
+            <div id="hero-box">
+                <img id="hero-img" src="images/world-hero.png" alt="images of travelling around the world">
+            </div>
+            <section id="hero-msg">
+                <h1 class="hero-subpage-title">AROUND THE WORLD</h1>
+                <h3 class="breakfast-text">What better way to enjoy the culinary experience than to do it from various locations around the globe. Take a savory ride to multiple destinations as you incorporate these delectable and eye-opening additions into your kitchen.</h3>
+            </section>
         </section>
 
         <section class="world_meals">
-            <img src="images/denver_burrito.png">
-            <h3>Spain - Paella</h3>
-            <ul>
-                <i>
-                <li>3 boned and skinned chicken breasts</li>
-                <li>&frac12; green pepper</li>
-                <li>&frac12; red pepper</li>
-                <li>1 clove garlic</li>
-                <li>1 onion</li>
-                <li>3 tablespoon olive oil</li>
-                <li>1 &frac12; cups long-grain rice</li>
-                <li>2 &frac14; cups water</li>
-                <li>16 oz. canned tomatoes</li>
-                <li>1 teaspoon turmeric</li>
-                <li>&frac34; cup frozen peas</li>
-                <li>8 cooked shrimp</li>
-                <li>8 cooked mussels (optional)</li>
-                <li>pinch of salt</li>
-                <li>pinch of paprika</li>
-                <li>1 lemon</li>
-                </i>
-            </ul>
-            <ol>
-                <li>Peel garlic and onion. Take teh seeds and stalks out of the peppers. Chop them all up. Slice the chicken into thin strips.</li>
-                <li>Heat the oil in a wide, shallow pan, and fry the chicken strips until they turn white. Add the chopped vegetables.</li>
-                <li>Add the rice. Cook for a few minutes, stirring all the time.</li>
-                <li>Add the tomatoes, water, turmeric, salt, and paprika. Simmer until the rice is cooked (about 15 minutes).</li>
-                <li>Stir in the peas, and lay the shrimp and the mussels on top.</li>
-                <li>Cook for five more minutes, then serve with wedges of lemon.</li>
-            </ol>
+            <img class="img-1" src="images/netherlands.png">
+            <div class="meal-info">
+                <h3 class="world-meal-title"><span class="country">Netherlands</span> - Apple Pancakes</h3>
+                <ul class="world-ingredients">
+                    <i>
+                    <li>1 cup flour</li>
+                    <li>pinch of salt</li>
+                    <li>1 &frac13; cups milk</li>
+                    <li>1 large egg</li>
+                    <li>2 tablespoons butter</li>
+                    <li>3 large eating apples</li>
+                    <li>1 tablespoon water</li>
+                    <li>small bar of chocolate</li>
+                    </i>
+                </ul>
+                <ol class="world-instructions">
+                    <li>Sift the flour and salt into a bowl. Beat the egg and milk into the flour, to make a batter.</li>
+                    <li>Peel, core, and slice the apples. Put them in a pan with the water, and simmer for five minutes.</li>
+                    <li>Melt a little butter over a gentle heat in a small frying pan. Pour in enough batter to cover the bottom.</li>
+                    <li>Lift the pancake out when it's cooked on both sides. Put it into a warm over while you make the next one.</li>
+                    <li>Put some apple on eachpancake, and fold in half. Top with grated chocolate.</li>
+                </ol>
+            </div>
         </section>
 
         <section class="world_meals">
-            <img src="images/denver_burrito.png">
-            <h3>China - Soy Chicken Wings</h3>
-            <ul>
-                <i>
-                <li>2 tablespoons soy sauce</li>
-                <li>1 tablespoon Chinese five-spice</li>
-                <li>1 tablespoon lemon juice</li>
-                <li>2 green onions</li>
-                <li>1 tablespoon honey</li>
-                <li>1 tablespoon tomato paste or ketchup</li>
-                <li>12 chicken wings</li>
-                <li>some aluminum foil</li>
-                </i>
-            </ul>
-            <ol>
-                <li>Chop the onions. Mix with the soy sauce, spice, lemon juice, honey, and tomato paste in a bowl.</li>
-                <li>Prick the chicken skin and coat with the sauce. Cover, and leave overnight in the refrigerator.</li>
-                <li>Set the oven to 425°F. Put the coated chicken wings on a cookie sheet lined with a sheet of aluminum foil. Keep the extra sauce.</li>
-                <li>Cook for about 45 minutes, turning them frequently and brushing with extra sauce. They should be crisp, brown, and tender.</li>
-            </ol>
+            <img class="img-2" src="images/spain.png">
+            <div class="meal-info-2">
+                <h3 class="world-meal-title"><span class="country">Spain</span> - Paella</h3>
+                <ul class="world-ingredients">
+                    <i>
+                    <li>3 boned and skinned chicken breasts</li>
+                    <li>&frac12; green pepper</li>
+                    <li>&frac12; red pepper</li>
+                    <li>1 clove garlic</li>
+                    <li>1 onion</li>
+                    <li>3 tablespoon olive oil</li>
+                    <li>1 &frac12; cups long-grain rice</li>
+                    <li>2 &frac14; cups water</li>
+                    <li>16 oz. canned tomatoes</li>
+                    <li>1 teaspoon turmeric</li>
+                    <li>&frac34; cup frozen peas</li>
+                    <li>8 cooked shrimp</li>
+                    <li>8 cooked mussels (optional)</li>
+                    <li>pinch of salt</li>
+                    <li>pinch of paprika</li>
+                    <li>1 lemon</li>
+                    </i>
+                </ul>
+                <ol class="world-instructions">
+                    <li>Peel garlic and onion. Take the seeds and stalks out of the peppers. Chop them all up. Slice the chicken into thin strips.</li>
+                    <li>Heat the oil in a wide, shallow pan, and fry the chicken strips until they turn white. Add the chopped vegetables.</li>
+                    <li>Add the rice. Cook for a few minutes, stirring all the time.</li>
+                    <li>Add the tomatoes, water, turmeric, salt, and paprika. Simmer until the rice is cooked (about 15 minutes).</li>
+                    <li>Stir in the peas, and lay the shrimp and the mussels on top.</li>
+                    <li>Cook for five more minutes, then serve with wedges of lemon.</li>
+                </ol>
+            </div>
         </section>
 
         <section class="world_meals">
-            <img src="images/denver_burrito.png">
-            <h3>South Africa - Bobotie</h3>
-            <ul>
-                <i>
-                <li>1 onion</li>
-                <li>1 tablespoon olive oil</li>
-                <li>2 slices bread</li>
-                <li>1 cup milk</li>
-                <li>1 lb. ground beef</li>
-                <li>1 tablespoon curry powder</li>
-                <li>&frac14; cup slivered almonds</li>
-                <li>&frac13; cup raisins</li>
-                <li>1 tablespoon lemon juice</li>
-                <li>pinch of salt and pepper</li>
-                <li>2 eggs</li>
-                </i>
-            </ul>
-            <ol>
-                <li>Cut the crusts off the bread, break it into chunks, and soak it in half of the milk.</li>
-                <li>Chop the onion. Heat the oil in a pan, and fry the onion over a low heat for ten minutes.</li>
-                <li>Add the beef, curry, powder, lemon juice, nuts, raisins, salt, and pepper to the pan. Fry until the meat is brown all over.</li>
-                <li>spoon all of it into an ovenproof dish. Beat the eggs with the rest of the milk, an dpour over the mixture.</li>
-                <li>Put it in the oven for 1 &frac14; hours. The top of the bobotie should be set and golden brown.</li>
-            </ol>
+            <img class="img-1" src="images/china.png">
+            <div class="meal-info">
+                <h3 class="world-meal-title"><span class="country">China</span> - Soy Chicken Wings</h3>
+                <ul class="world-ingredients">
+                    <i>
+                    <li>2 tablespoons soy sauce</li>
+                    <li>1 tablespoon Chinese five-spice</li>
+                    <li>1 tablespoon lemon juice</li>
+                    <li>2 green onions</li>
+                    <li>1 tablespoon honey</li>
+                    <li>1 tablespoon tomato paste or ketchup</li>
+                    <li>12 chicken wings</li>
+                    <li>some aluminum foil</li>
+                    </i>
+                </ul>
+                <ol class="world-instructions">
+                    <li>Chop the onions. Mix with the soy sauce, spice, lemon juice, honey, and tomato paste in a bowl.</li>
+                    <li>Prick the chicken skin and coat with the sauce. Cover, and leave overnight in the refrigerator.</li>
+                    <li>Set the oven to 425°F. Put the coated chicken wings on a cookie sheet lined with a sheet of aluminum foil. Keep the extra sauce.</li>
+                    <li>Cook for about 45 minutes, turning them frequently and brushing with extra sauce. They should be crisp, brown, and tender.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="world_meals">
+            <img class="img-2" src="images/south-africa.png">
+            <div class="meal-info-2">
+                <h3 class="world-meal-title"><span class="country">South Africa</span> - Bobotie</h3>
+                <ul class="world-ingredients">
+                    <i>
+                    <li>1 onion</li>
+                    <li>1 tablespoon olive oil</li>
+                    <li>2 slices bread</li>
+                    <li>1 cup milk</li>
+                    <li>1 lb. ground beef</li>
+                    <li>1 tablespoon curry powder</li>
+                    <li>&frac14; cup slivered almonds</li>
+                    <li>&frac13; cup raisins</li>
+                    <li>1 tablespoon lemon juice</li>
+                    <li>pinch of salt and pepper</li>
+                    <li>2 eggs</li>
+                    </i>
+                </ul>
+                <ol class="world-instructions">
+                    <li>Cut the crusts off the bread, break it into chunks, and soak it in half of the milk.</li>
+                    <li>Chop the onion. Heat the oil in a pan, and fry the onion over a low heat for ten minutes.</li>
+                    <li>Add the beef, curry, powder, lemon juice, nuts, raisins, salt, and pepper to the pan. Fry until the meat is brown all over.</li>
+                    <li>spoon all of it into an ovenproof dish. Beat the eggs with the rest of the milk, an dpour over the mixture.</li>
+                    <li>Put it in the oven for 1 &frac14; hours. The top of the bobotie should be set and golden brown.</li>
+                </ol>
+            </div>
         </section>
 
 
         <section class="world_meals">
-            <img src="images/denver_burrito.png">
-            <h3>Middle East - Borek</h3>
-            <ul>
-                <i>
-                <li>8 oz. readymade filo pastry</li>
-                <li>4 tablespoons olive oil</li>
-                <li>12 oz. feta cheese</li>
-                <li>Large bunch of mint</li>
-                <li>Pinch of pepper and nutmeg</li>
-                </i>
-            </ul>
-            <ol>
-                <li>Heat oven to 350°F. Crumble the feta cheese into a mixing bowl. Add the pepper and nutmeg.</li>
-                <li>Wash the mint, and cut up with scissors. Add to the cheese, and mash with a fork until creamy.</li>
-                <li>Take out pieces of filo pastry and separate carefully. Cut them into strips about 3 inches wide.</li>
-                <li>Brush strips with oil, and put a teaspoonful of feta in the corner of each one. Fold into triangular shapes.</li>
-                <li>Keep folding, so that you end up with fat little triangles. Repeat until all the feta is used up.</li>
-                <li>Brush with oil, and bake on a greased cookie sheet for 25 minutes, or until golden.</li>
-            </ol>
+            <img class="img-1" src="images/middle-east.png">
+            <div class="meal-info">
+                <h3 class="world-meal-title"><span class="country">Middle East</span> - Borek</h3>
+                <ul class="world-ingredients">
+                    <i>
+                    <li>8 oz. readymade filo pastry</li>
+                    <li>4 tablespoons olive oil</li>
+                    <li>12 oz. feta cheese</li>
+                    <li>Large bunch of mint</li>
+                    <li>Pinch of pepper and nutmeg</li>
+                    </i>
+                </ul>
+                <ol class="world-instructions">
+                    <li>Heat oven to 350°F. Crumble the feta cheese into a mixing bowl. Add the pepper and nutmeg.</li>
+                    <li>Wash the mint, and cut up with scissors. Add to the cheese, and mash with a fork until creamy.</li>
+                    <li>Take out pieces of filo pastry and separate carefully. Cut them into strips about 3 inches wide.</li>
+                    <li>Brush strips with oil, and put a teaspoonful of feta in the corner of each one. Fold into triangular shapes.</li>
+                    <li>Keep folding, so that you end up with fat little triangles. Repeat until all the feta is used up.</li>
+                    <li>Brush with oil, and bake on a greased cookie sheet for 25 minutes, or until golden.</li>
+                </ol>
+            </div>
         </section>
     </main>
     <footer>
         <div class="footer-top">
-            <img src="images/first_logo.png" alt="logo">
+            <img class="logo" src="images/first_logo.png" alt="logo">
             <section class="credits">
                 <h3>RECIPES FROM:</h3>
-                <p><i>Easy Microwave Menus</i> by Barbara Methven</p>
-                <p><i>The Kids' Around the World Cookbook</i> by Deri Robins</p>
+                <p><i style="color: white;"><a href="https://www.thriftbooks.com/w/easy-microwave-menus_barbara-methven_barbara-methuen/2242428/#edition=692120&idiq=1178027" target="_blank">Easy Microwave Menus</a></i> by Barbara Methven</p>
+                <p><i style="color: white;"><a href="https://www.amazon.com/Kids-Around-World-Cookbook/dp/1856979970" target="_blank">The Kids' Around the World Cookbook</a></i> by Deri Robins</p>
             </section>
             <section class="contacts">
                 <h3>Contact Us</h3>
                 <p>+1-234-567-8900</p>
                 <p>thecuisinemachine@gmail.com</p>
-                <img src="#" alt="facebook">
-                <img src="#" alt="instagram">
-                <img src="#" alt="twitter">
-                <img src="#" alt="linkedin">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/fb_icon.png" alt="facebook">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/ig_icon.png" alt="instagram">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twt_icon.png" alt="twitter">
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <img src="images/in_icon.png" alt="linkedin">
+                </a>
             </section>
         </div>
         <div class="footer-bottom">
-            <p>The Cuisine Machine c 2022 | Henrietta Gabriel | WDD130-24</p>
+            <p>The Cuisine Machine &copy; 2022 | Henrietta Gabriel | WDD130-24</p>
             <a href="site-plan.html">Site Plan</a>
         </div>
     </footer>
